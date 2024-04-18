@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background-color: #bbc6fa;
+}
+
+.quote-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 43.75rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,0.15);
+}
+
+.quote-box h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 3px;
+    border-radius: 0.25rem;
+    background-color: #177ce5;
+}
+
+.quote-box blockquote {
+    font-size: 1.6rem;
+    min-height: 6.875rem;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    position: relative;
+    display: block;
+    margin-top: 0.625rem;
+    float: right;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 1.25rem;
+    height: 0.125rem;
+    position: absolute;
+    top: 50%;
+    left: -1.875rem;
+    background-color: #177ce5;
+}
+
+.quote-box .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.125rem;
+}
+
+.quote-box .btn-container button {
+    width: 9.375rem;
+    height: 3.125rem;
+    color: #fff;
+    background-color: #177ce5;
+    border: 1px solid #177ce5;
+    border-radius: 2rem;
+    margin: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quote-box .btn-container button img {
+    width: 2rem;
+    margin-right: 0.25rem;
+}
+
+
+.quote-box .btn-container button:nth-child(2) {
+    background-color: transparent;
+    color: #000000;
+}
