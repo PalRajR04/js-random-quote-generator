@@ -83,19 +83,25 @@ body {
     border: 1px solid #177ce5;
     border-radius: 2rem;
     margin: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
-.quote-box .btn-container button img {
-    width: 2rem;
-    margin-right: 0.25rem;
-}
-
-
-.quote-box .btn-container button:nth-child(2) {
+.quote-box .btn-container a {
     background-color: transparent;
     color: #000000;
+    width: 9.375rem;
+    height: 3.125rem;
+    border: 1px solid #177ce5;
+    border-radius: 2rem;
+    margin: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quote-box .btn-container a img {
+    width: 2rem;
+    margin-right: 0.25rem;
 }
